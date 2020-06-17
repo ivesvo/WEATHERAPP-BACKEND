@@ -12,6 +12,9 @@
 </div> --}}
 
 <div class="flex-container">
+    <div class="blank">
+
+    </div>
 
 
     <div>
@@ -21,12 +24,13 @@
     <div class="container">
         {{#if forecast}}
         <div class="row justify-content-md-center">
-            <div class="col-4"></div>
+            <div class="col-2"></div>
+           
             <div class="col-1">
                 <img src="http://openweathermap.org/img/wn/{{icon}}@2x.png" />
 
             </div>
-            <div class="col-7">
+            <div class="col-5">
                 <ul>
 
                 <li>
@@ -48,8 +52,8 @@
 
 
       
-        <div>
-            <div classs="row justify-content-md-center"></div>
+        <div class="flex-container">
+            <div classs="row justify-content-md-center "></div>
             <h2>Overcast throughout the day</h2>
             <div class="row">
                 {{#each hourly}}

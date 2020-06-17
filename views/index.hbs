@@ -13,26 +13,52 @@
 
 <div class="flex-container">
 
- 
+
     <div>
         <h2>Weather in {{city}}</h2>
-    </div>
-    <div>
-        {{#if forecast}}
-        <ul>
-            <li><h2>{{forecast.temp}}°C</h2></li>
-            <li><h2>{{forecast.weather.0.description}}</h2></li>
-            <li>Feels like: {{forecast.feels_like}} °C </li>
-        </ul>
-    <div>
-        <h2>Overcast throughout the day</h2>
-        <div>
-            {{#each hourly}}
-            {{temp}}
 
-            {{/each}}
-        </div>
     </div>
+    <div class="container">
+        {{#if forecast}}
+        <div class="row justify-content-md-center">
+            <div class="col-4"></div>
+            <div class="col-1">
+                <img src="http://openweathermap.org/img/wn/{{icon}}@2x.png" />
+
+            </div>
+            <div class="col-7">
+                <ul>
+
+                <li>
+                    <h2>{{forecast.temp}}°C</h2>
+                </li>
+                <li>
+                    <h2>{{forecast.weather.0.description}}</h2>
+                </li>
+                <li>Feels like: {{forecast.feels_like}} °C </li>
+            </ul>
+
+            </div>
+            
+           
+
+        </div>
+            
+
+
+
+      
+        <div>
+            <div classs="row justify-content-md-center"></div>
+            <h2>Overcast throughout the day</h2>
+            <div class="row">
+                {{#each hourly}}
+                <div>{{temp}} °C</div>
+                <img src="http://openweathermap.org/img/wn/{{weather.0.icon}}.png" />
+
+                {{/each}}
+            </div>
+        </div>
         {{/if}}
     </div>
 </div>

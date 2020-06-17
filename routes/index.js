@@ -17,6 +17,7 @@ router.get('/', async function (req, res, next) {
     //use the location coords to get the forecast
     //get coords from location.geometry.coordinaqtes
     const forecast = await getForecast(location.geometry.coordinates[0], location.geometry.coordinates[1])
+    console.log(forecast.current.weather[0].icon)
     // const every3hours = []
     // let count = 0;
 
@@ -35,6 +36,7 @@ router.get('/', async function (req, res, next) {
     // console.log(forecast)
     return res.render('index', {
       title: 'Another Weather Forecast Nobody Asks For',
+      icon: forecast.current.weather[0].icon,
       forecast: forecast.current,
       city: location.text,
       hourly: every2hours

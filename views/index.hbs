@@ -1,0 +1,38 @@
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <a class="navbar-brand" href="#">Umbrella</a>
+    <form action="/" method="GET" class="form-inline">
+        <input name="city" placeholder="Enter a city name" type="text" class="form-control mr-sm-2" required>
+        <button type="submit" class="btn btn my-2 my-sm-0">Get Forecast</button>
+    </form>
+
+</nav>
+{{!-- <div class="flex-container"> 
+    <h1>{{title}}</h1>
+
+</div> --}}
+
+<div class="flex-container">
+
+ 
+    <div>
+        <h2>Weather in {{city}}</h2>
+    </div>
+    <div>
+        {{#if forecast}}
+        <ul>
+            <li><h2>{{forecast.temp}}°C</h2></li>
+            <li><h2>{{forecast.weather.0.description}}</h2></li>
+            <li>Feels like: {{forecast.feels_like}} °C </li>
+        </ul>
+    <div>
+        <h2>Overcast throughout the day</h2>
+        <div>
+            {{#each hourly}}
+            {{temp}}
+
+            {{/each}}
+        </div>
+    </div>
+        {{/if}}
+    </div>
+</div>

@@ -1,24 +1,10 @@
-                r                
-               ain
-               rai
-              nrain
-             rainrai
-            nrainrain
-           ainrainrain
-          rainrainrainr
-         ainrainrainrain
-        rainrainrainrainr
-      ainrainrainrainrainra
-    inra nrainrainrainrainrai
-  nrain  inrainrainrainrainrain
- rain   nrainrainrainrainrainrai
-nrai   inrainrainrainrainrainrain
-rai   inrainrainrainrainrainrainr
-rain   nrainrainrainrainrainrainr
- rainr  nrainrainrainrainrainrai
-  nrain ainrainrainrainrainrain
-    rainrainrainrainrainrainr
-      rainranirainrainrainr
-           ainrainrain
-           
+    _
+     _( )_          _     
+   _(     )_      _( )_
+  (_________)   _(     )_
+    \  \  \    (_________)
+      \  \       \  \  \
+                   \  \
+
+
 heroku: https://unnecessary-weather-app.herokuapp.com/
